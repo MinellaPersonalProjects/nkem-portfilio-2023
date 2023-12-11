@@ -25,6 +25,7 @@
         >
       <project-cards
         :image="project.description.image"
+        :link="project.github"
         :name="project.name"
         :description="project.description.text"
         :technologies="project.description.technologies"

@@ -1,5 +1,6 @@
 <script setup>
 defineProps({
+  link: String,
   image: String,
   name: String,
   description: String,
@@ -13,7 +14,7 @@ defineProps({
   >
     <v-card-title>{{ name }}</v-card-title>
     <v-card-subtitle>
-      <v-icon>mdi-link-variant</v-icon>
+      <v-icon :href="link" target="_blank">mdi-link-variant</v-icon>
     </v-card-subtitle>
     <v-card-text>
       <v-card variant="tonal" height="200">
