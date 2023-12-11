@@ -14,7 +14,9 @@ defineProps({
   >
     <v-card-title>{{ name }}</v-card-title>
     <v-card-subtitle>
-      <v-icon :href="link" target="_blank">mdi-link-variant</v-icon>
+      <v-btn icon :href="link" target="_blank" variant="text">
+        <v-icon>mdi-link-variant</v-icon>
+      </v-btn>
     </v-card-subtitle>
     <v-card-text>
       <v-card variant="tonal" height="200">

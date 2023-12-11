@@ -1,5 +1,7 @@
 <script setup>
+import {useAppStore} from "@/store/app";
 
+const store = useAppStore()
 </script>
 
 <template>
@@ -16,10 +18,13 @@
           <v-btn
             variant="outlined"
             style="color: #333333; font-family: Futura,sans-serif;"
+            href="mailto:nmogbo2001@gmail.com"
           >CONTACT ME</v-btn>
           <v-btn
             variant="outlined"
             style="margin-left: 10px; color: #333333;font-family: Futura,sans-serif;"
+            href="https://github.com/MinellaPersonalProjects/nkem-portfilio-2023/blob/main/public/resume.pdf"
+            target="_blank"
           >VIEW RESUME</v-btn>
         </v-col>
       </v-row>

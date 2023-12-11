@@ -14,23 +14,20 @@
         color="#FF66CC"
         class="btn"
         :style="{marginRight: smAndDown ? '80px':'' }"
+        href="https://github.com/MinellaPersonalProjects/nkem-portfilio-2023/blob/main/public/resume.pdf"
+        target="_blank"
       >Resume</v-btn>
     </template>
-    <v-navigation-drawer
-      v-model="drawer"
-      temporary
-    >
-      <v-list
-        :items="items"
-      ></v-list>
-    </v-navigation-drawer>
   </v-app-bar>
 </template>
 
 <script setup>
+  import {ref} from "vue";
   import {useTheme} from "vuetify";
+  import {useAppStore} from "@/store/app";
 
   const { smAndDown } = useTheme()
+  const store = useAppStore()
 
   function scrollTo(value){
     const button = document.getElementById(value);

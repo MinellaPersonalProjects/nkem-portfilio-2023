@@ -14,21 +14,28 @@
     <v-col cols="12">
       <v-row>
         <v-col cols="4">
-          <v-card height="400px">
+          <v-card class="text">
             <v-card-title>#1</v-card-title>
-            <v-card-text>
-              I wrote a book when I was 12
+            <v-card-text style="font-size: 150%; line-height: 1.5;">
+              I published a novel when I was 12
             </v-card-text>
           </v-card>
         </v-col>
         <v-col cols="4">
-          <v-card height="400px">
+          <v-card class="text">
             <v-card-title>#2</v-card-title>
+            <v-card-text style="font-size: 150%; line-height: 1.5;">
+              I have been teaching myself Japanese . <br/>
+              こ ん に ち は !!
+            </v-card-text>
           </v-card>
         </v-col>
         <v-col cols="4">
-          <v-card height="400px">
+          <v-card class="text">
             <v-card-title>#3</v-card-title>
+            <v-card-text style="font-size: 150%; line-height: 1.5;">
+              I am an avid reader, and love fantasy novels
+            </v-card-text>
           </v-card>
         </v-col>
       </v-row>
